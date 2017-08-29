@@ -2,7 +2,6 @@ package com.rudra.aks;
 
 import java.util.Properties;
 
-import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
@@ -19,7 +18,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@ComponentScan ( basePackages = {"com.rudra.aks.service", 
+@ComponentScan ( basePackages = {"com.rudra.aks.service", "com.rudra.aks.util",
 		"com.rudra.aks.repository", "com.rudra.aks.mvc", "com.rudra.aks.security"})
 @EnableJpaRepositories
 @EnableTransactionManagement
